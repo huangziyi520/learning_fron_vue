@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        function jump() { 
+            // location.href="http://localhost:8081/query"; 
+            console.log(navigator.userAgent.toLowerCase().match(/safari/))
+            console.log(window.c_plugins)
+         }
+         $(document).ready(function(){
+             userAgent = navigator.userAgent.toLowerCase();
+             console.log(userAgent);
+             var source = $("#source").val();
+             console.log(source);
+         })
+    </script>
+</head>
+<body>
+    <form id="form1" action="" method="GET">
+        <input type='button' onclick='jump();' value='跳转'>
+    </form>
+</body>
+</html>
